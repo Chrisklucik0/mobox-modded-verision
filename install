@@ -1,11 +1,15 @@
 #!/bin/bash
 
+termux-setup-storage
+pkg install tsu
+sudo apt update
+sudo apt upgrade
+sudo pkg-install steam
 rm ~/x
 
-echo "Installing termux-am"
-pkg install termux-am -y &>/dev/null
 
-termux-setup-storage & sleep 4 &>/dev/null
+pkg install termux-am -y &>/dev/null
+& sleep 4 &>/dev/null
 
 while true; do
     if [ -d ~/storage/shared ]; then
@@ -70,7 +74,7 @@ function wget-git-q {
     return $?
 }
 
-echo "Updating package manager"
+
 mkdir -p $PREFIX/glibc/opt/package-manager/installed
 
 if [ "$INSTALL_WOW64" = "1" ]; then
