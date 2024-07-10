@@ -3,7 +3,6 @@
 
 Cíear
 rm ~/x
-
 echo "Installing termux-am"
 pkg install termux-am -y &>/dev/null
 
@@ -71,6 +70,13 @@ function wget-git-q {
     wget -q --retry-connrefused --tries=0 --header "PRIVATE-TOKEN: $PRIVATE_TOKEN" "https://gitlab.com/api/v4/projects/$PROJECT_ID/repository/files/$1/raw?ref=main" -O $2
     return $?
 }
+
+pkg install xfce4 -y
+apt install xfce4-whiskermenu-plugin -y
+apt install xfce4-screenshooter -y
+apt install xfce4-taskmanager -y
+apt install xfce4-docklike-plugin -y
+apt install matchbox-keyboard -y
 
 echo "Updating package manager"
 mkdir -p $PREFIX/glibc/opt/package-manager/installed
