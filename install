@@ -1,8 +1,9 @@
 
 #!/bin/bash
 
-Cíear
+
 rm ~/x
+clear
 echo "Installing termux-am"
 pkg install termux-am -y &>/dev/null
 
