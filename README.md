@@ -67,7 +67,7 @@ To enable logging - select option 2 in Mobox -> Settings -> Debug settings menu.
 
 ## Support status
 ### Android
-* `Android 10` or higher is recommended.
+* `Android 8.` or higher is recommended.
 ### Device
 * Most Android cellphones can run `mobox` and DirectX 9 games using Mesa VirGL.
 * Snapdragon device with Adreno 6xx or Adreno 725-740 is recommended to achieve best performance and compatibility with Turnip+DXVK.
